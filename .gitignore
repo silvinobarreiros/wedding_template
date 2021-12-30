@@ -70,3 +70,4 @@ yarn-error.log*
 
 **/bin
 .envrc
+build/
