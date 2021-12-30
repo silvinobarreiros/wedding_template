@@ -14,3 +14,9 @@ export const splitarray = (input, spacing) => {
 
   return output
 }
+
+export const isVerified = phrase => {
+  const password = process.env.REACT_APP_PASSWORD
+
+  return password && password === phrase
+}
