@@ -20,3 +20,10 @@ export const isVerified = phrase => {
 
   return password && password === phrase
 }
+
+export const daysBetween = (dateOne, dateTwo) => {
+  const difference = dateTwo.getTime() - dateOne.getTime()
+  const days = difference / (1000 * 3600 * 24)
+
+  return Math.abs(days)
+}
