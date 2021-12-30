@@ -1,21 +1,25 @@
-import React from 'react'
-import {getRandomEntry} from '../util'
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import { getRandomEntry } from '../util'
 
-const RightContent = ({pics, children}) => {
-  const {url, description} = getRandomEntry(pics)
-  
-  return(
+const RightContent = ({ pics, children }) => {
+  const randomPic = getRandomEntry(pics)
+  const [pic] = useState(randomPic)
+
+  return (
     <div className="content">
       <div className="photo-right">
-       <img src={url} alt={description} />
+        <img src={pic.url} alt={pic.description} />
       </div>
 
-      <div className="content-right">
-        {children}
-      </div>
+      <div className="content-right">{children}</div>
     </div>
   )
 }
 
-export default RightContent
+RightContent.propTypes = {
+  pics: PropTypes.array.isRequired,
+  children: PropTypes.children
+}
 
+export default RightContent

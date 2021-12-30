@@ -1,16 +1,22 @@
-import React from 'react'
-import {getRandomEntry} from '../util'
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
-const Jumbotron = ({pics}) => {
-  const {url, description} = getRandomEntry(pics)
-  
+import { getRandomEntry } from '../util'
+
+const Jumbotron = ({ pics }) => {
+  const randomPic = getRandomEntry(pics)
+  const [pic] = useState(randomPic)
+
   return (
-    <div className='jumbotron'>
-      <img src={url} alt={description} />
+    <div className="jumbotron">
+      <img src={pic.url} alt={pic.description} />
       <h1> MaryAlexa & Silvino </h1>
     </div>
   )
-  
+}
+
+Jumbotron.propTypes = {
+  pics: PropTypes.object.isRequired
 }
 
 export default Jumbotron
