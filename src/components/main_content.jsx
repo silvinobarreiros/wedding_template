@@ -39,6 +39,7 @@ const MainContent = ({ open }) => (
     <Main open={open} id="Main">
       <PasswordDialog />
       <Jumbotron pics={coverPhotos} />
+      <div id={'ourstory-div'} />
       <FadeInSection>
         <div>
           <SubHeader title="Our Story" />
@@ -61,6 +62,7 @@ const MainContent = ({ open }) => (
           </Paper>
         </div>
       </FadeInSection>
+      <div id={'itinerary-div'} />
       <FadeInSection>
         <div>
           <SubHeader title="Itinerary" />
@@ -83,6 +85,7 @@ const MainContent = ({ open }) => (
           </Paper>
         </div>
       </FadeInSection>
+      <div id={'location-div'} />
       <FadeInSection>
         <SubHeader title="Location" />
         <Paper elevation={3} className="card">

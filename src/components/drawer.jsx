@@ -52,7 +52,11 @@ const DrawerMenu = ({ open, drawerWidth, handleDrawerClose }) => {
           {drawerItems.map((text, index) => (
             <a
               key={index}
-              href={text === 'Our Story' ? '#ourstory' : `#${text}`}
+              href={
+                text === 'Our Story'
+                  ? '#ourstory-div'
+                  : `#${text.toLocaleLowerCase()}-div`
+              }
             >
               <ListItem button key={text} component="button">
                 <ListItemText primary={text} />
