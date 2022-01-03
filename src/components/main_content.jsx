@@ -124,7 +124,7 @@ const MainContent = ({ open }) => (
                 Award, in the categories "Best National Single" and "Best
                 National Dance Single"
               </p>
-            </LeftContent>
+            </RightContent>
           </Paper>
         </div>
       </FadeInSection>
