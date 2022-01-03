@@ -105,6 +105,29 @@ const MainContent = ({ open }) => (
           </LeftContent>
         </Paper>
       </FadeInSection>
+      <div id={'Travel-div'} />
+      <FadeInSection>
+        <div>
+          <SubHeader title="Travel" />
+          <Paper elevation={3} className="card">
+            <RightContent pics={images[4]}>
+              <p>
+                "What Is Love" is a song recorded by Trinidadian-German
+                Eurodance artist Haddaway for his debut album, The Album. The
+                song was released on 8 May 1993 as the album's lead single. It
+                was a massive hit in Europe, becoming a number-one hit in at
+                least 13 countries and reaching number two in Germany, Sweden,
+                and the United Kingdom. Outside Europe, the single was a hit
+                worldwide, reaching number 11 in the United States, number 12 in
+                Australia, number 17 in Canada, and number 48 in New Zealand.
+                The song earned Haddaway two awards at the German 1994 Echo
+                Award, in the categories "Best National Single" and "Best
+                National Dance Single"
+              </p>
+            </LeftContent>
+          </Paper>
+        </div>
+      </FadeInSection>
     </Main>
   </>
 )
