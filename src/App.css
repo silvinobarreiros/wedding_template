@@ -13,7 +13,7 @@ body,
 
 #logo {
   color: black !important;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 1.5em;
 }
 
@@ -37,7 +37,19 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 6rem;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
+}
+
+.jumbotron h2 {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  z-index: 2;
+  top: -75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
 }
 
 .jumbotron img {
@@ -60,13 +72,13 @@ body,
 
 #password_dialog_field_content .MuiInputLabel-root {
   color: rgb(255, 255, 255);
-  font-family: "Dancing Script", cursive !important;
+  font-family: 'Dancing Script', cursive !important;
   font-size: 1em;
 }
 
 #password_dialog_btn {
   color: rgb(255, 255, 255);
-  font-family: "Dancing Script", cursive !important;
+  font-family: 'Dancing Script', cursive !important;
   font-size: 1em;
 }
 
@@ -75,7 +87,7 @@ input#password_dialog_field {
 }
 
 #password_dialog .MuiDialogTitle-root {
-  font-family: "Dancing Script", cursive !important;
+  font-family: 'Dancing Script', cursive !important;
   font-size: 1.5em;
 }
 
@@ -88,7 +100,7 @@ input#password_dialog_field {
 }
 
 .subHeader {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 2rem;
   text-align: center;
   margin-top: 3rem;
