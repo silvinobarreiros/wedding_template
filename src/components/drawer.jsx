@@ -19,7 +19,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-start'
 }))
 
-const drawerItems = ['Our Story', 'Itinerary', 'Location']
+const drawerItems = ['Our Story', 'Itinerary', 'Location', 'Travel']
 
 const DrawerMenu = ({ open, drawerWidth, handleDrawerClose }) => {
   const theme = useTheme()
