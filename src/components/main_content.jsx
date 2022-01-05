@@ -12,7 +12,7 @@ import { splitarray } from '../util'
 import { coverPhotos, allExceptCover } from '../images'
 import PasswordDialog from './password_dialog'
 
-const images = splitarray(allExceptCover, allExceptCover.length / 3)
+const images = splitarray(allExceptCover, allExceptCover.length / 4)
 console.log(images)
 
 const Main = styled('main', { shouldForwardProp: prop => prop !== 'open' })(
@@ -105,12 +105,12 @@ const MainContent = ({ open }) => (
           </LeftContent>
         </Paper>
       </FadeInSection>
-      <div id={'Travel-div'} />
+      <div id={'travel-div'} />
       <FadeInSection>
         <div>
           <SubHeader title="Travel" />
           <Paper elevation={3} className="card">
-            <RightContent pics={images[4]}>
+            <RightContent pics={images[3]}>
               <p>
                 "What Is Love" is a song recorded by Trinidadian-German
                 Eurodance artist Haddaway for his debut album, The Album. The
