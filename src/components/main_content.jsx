@@ -61,14 +61,24 @@ const MainContent = ({ open }) => (
                 <br></br>
                 <i>Ceremony</i>
                 <br></br>
-                <a>Holy Trinty Greek Orthodox Cathedral</a>
-                <a href="https://www.google.com/maps/place/Holy+Trinity+Greek+Orthodox+Cathedral/@40.7697635,-73.9562265,15z/data=!4m2!3m1!1s0x0:0x98ddc98e5d9273f1?sa=X&ved=2ahUKEwjq69WZnpb1AhVBj4kEHaQHC8MQ_BJ6BAg7EAU"></a>
+                <a
+                  href="https://www.google.com/maps/place/Holy+Trinity+Greek+Orthodox+Cathedral/@40.7697635,-73.9562265,15z/data=!4m2!3m1!1s0x0:0x98ddc98e5d9273f1?sa=X&ved=2ahUKEwjq69WZnpb1AhVBj4kEHaQHC8MQ_BJ6BAg7EAU"
+                  rel="noopener"
+                  aria-label="Holy Trinty Greek Orthodox Cathedral"
+                >
+                  Holy Trinty Greek Orthodox Cathedral
+                </a>
                 <br></br>
                 14:00<br></br>
                 <i>Dinner & Dancing</i>
                 <br></br>
-                <a>Ravel Hotel</a>
-                <a href="https://www.google.com/maps/place/Ravel+Hotel,+Trademark+Collection+by+Wyndham/@40.7538562,-73.9516326,17z/data=!3m1!4b1!4m8!3m7!1s0x89c2598de86a3b3b:0x1918f3a5466f7603!5m2!4m1!1i2!8m2!3d40.7538245!4d-73.9493865"></a>
+                <a
+                  href="https://www.google.com/maps/place/Ravel+Hotel,+Trademark+Collection+by+Wyndham/@40.7538562,-73.9516326,17z/data=!3m1!4b1!4m8!3m7!1s0x89c2598de86a3b3b:0x1918f3a5466f7603!5m2!4m1!1i2!8m2!3d40.7538245!4d-73.9493865"
+                  rel="noopener"
+                  aria-label="Ravel Hotel"
+                >
+                  Ravel Hotel
+                </a>
                 <br></br>
                 18:00 Formal attire<br></br>
                 <b>Sunday Funday</b>
@@ -86,10 +96,13 @@ const MainContent = ({ open }) => (
             <p>
               NYC has a variety of options that can suit everyone's needs. Below
               are some options with group codes.
-              <a>
-                <b>Ravel Hotel</b>
+              <a
+                href="https://www.wyndhamhotels.com/trademark/long-island-city-new-york/ravel-hotel-trademark-collection-by-wyndham/rooms-rates?brand_id=TQ&checkInDate=10/8/2022&checkOutDate=10/9/2022&useWRPoints=false&children=0&groupCode=100822DIV&adults=1&rooms=1&loc=ChIJWbG6xytZwokRMY7uxcRsFVY&sessionId=1635866456"
+                rel="noopener"
+                aria-label="Ravel Hotel"
+              >
+                Ravel Hotel
               </a>
-              <a href="https://www.wyndhamhotels.com/trademark/long-island-city-new-york/ravel-hotel-trademark-collection-by-wyndham/rooms-rates?brand_id=TQ&checkInDate=10/8/2022&checkOutDate=10/9/2022&useWRPoints=false&children=0&groupCode=100822DIV&adults=1&rooms=1&loc=ChIJWbG6xytZwokRMY7uxcRsFVY&sessionId=1635866456"></a>
               <br></br>
               100822DIV<br></br>
               Keep in mind, this is where the reception and after party is
