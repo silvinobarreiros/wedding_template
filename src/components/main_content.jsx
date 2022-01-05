@@ -46,7 +46,8 @@ const MainContent = ({ open }) => (
           <Paper elevation={3} className="card">
             <LeftContent pics={images[0]}>
               <p>
-                We met at Stash. We got engaged in Big Sky. We are getting married in NYC. 
+                We met at Stash. We got engaged in Big Sky. We are getting
+                married in NYC.
               </p>
             </LeftContent>
           </Paper>
