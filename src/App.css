@@ -173,3 +173,50 @@ a {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.itin {
+  font-family: 'Dancing Script', cursive;
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+}
+
+.itin a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.itin h1 {
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.itin h2 {
+  font-size: 1.5rem;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+
+.itin p {
+  font-size: 0.9rem;
+}
+
+/* .itin h1 hr {
+  width: 6%;
+  height: 1px;
+  position: relative;
+  bottom: 9px;
+  border: none;
+  margin-bottom: 0px;
+  background-color: #dad1cb;
+} */
+
+.itin h2 hr {
+  width: 6%;
+  height: 1px;
+  position: relative;
+  bottom: 7px;
+  border: none;
+  margin-bottom: 0px;
+  background-color: #dad1cb;
+}
