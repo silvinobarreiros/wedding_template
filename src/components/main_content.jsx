@@ -58,7 +58,6 @@ const MainContent = ({ open }) => (
             <RightContent pics={images[1]}>
               <div className="itin">
                 <p>
-                  <h1>Wedding Day</h1>
                   <h2>
                     Ceremony
                     <hr></hr>
@@ -85,11 +84,6 @@ const MainContent = ({ open }) => (
                   >
                     Ravel Hotel
                   </a>
-                  <br></br>
-                  <h2>
-                    Sunday Funday<hr></hr>
-                  </h2>
-                  TBD
                 </p>
               </div>
             </RightContent>
@@ -113,9 +107,11 @@ const MainContent = ({ open }) => (
               </a>
               <br></br>
               100822DIV<br></br>
-              Keep in mind, this is where the reception and after party is
+              <i>Our wedding reception will be held at the Ravel Hotel</i>
+              <br></br>
               <br></br>
               <b>The Hoxton</b>
+              <br></br>
               HITCHED1022
             </p>
           </LeftContent>
@@ -128,11 +124,25 @@ const MainContent = ({ open }) => (
           <Paper elevation={3} className="card">
             <RightContent pics={images[3]}>
               <p>
-                While your presence is our present, in case you really want to
-                still send us something, below are some links with ideas.
+                While celebrating together on our big day means the most, if you
+                want to help us celebrate with a gift, we've provided some
+                inspiration below.
                 <br></br>
-                Zola<br></br>
-                Food 52
+                <a
+                  href="https://www.zola.com/registry/marryvino"
+                  rel="noopener"
+                  aria-label="Zola"
+                >
+                  Zola
+                </a>
+                <br></br>
+                <a
+                  href="https://www.zola.com/registry/marryvino"
+                  rel="noopener"
+                  aria-label="Zola"
+                >
+                  Food 52
+                </a>
               </p>
             </RightContent>
           </Paper>
