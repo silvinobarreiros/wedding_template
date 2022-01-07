@@ -95,25 +95,45 @@ const MainContent = ({ open }) => (
         <SubHeader title="Accomodations" />
         <Paper elevation={3} className="card">
           <LeftContent pics={images[2]}>
-            <p>
-              NYC has a variety of options that can suit everyone's needs. Below
-              are some options with group codes.
-              <a
-                href="https://www.wyndhamhotels.com/trademark/long-island-city-new-york/ravel-hotel-trademark-collection-by-wyndham/rooms-rates?brand_id=TQ&checkInDate=10/8/2022&checkOutDate=10/9/2022&useWRPoints=false&children=0&groupCode=100822DIV&adults=1&rooms=1&loc=ChIJWbG6xytZwokRMY7uxcRsFVY&sessionId=1635866456"
-                rel="noopener"
-                aria-label="Ravel Hotel"
-              >
-                Ravel Hotel
-              </a>
-              <br></br>
-              100822DIV<br></br>
-              <i>Our wedding reception will be held at the Ravel Hotel</i>
-              <br></br>
-              <br></br>
-              <b>The Hoxton</b>
-              <br></br>
-              HITCHED1022
-            </p>
+            <div className="accom">
+              <p>
+                <div className="intro">
+                  NYC has a variety of options that can suit everyone's needs.
+                  We setup room blocks at two conveniently locations near the
+                  ceromony and reception
+                  <hr></hr>
+                </div>
+                <br></br>
+                <a
+                  href="https://www.wyndhamhotels.com/trademark/long-island-city-new-york/ravel-hotel-trademark-collection-by-wyndham/rooms-rates?brand_id=TQ&checkInDate=10/8/2022&checkOutDate=10/9/2022&useWRPoints=false&children=0&groupCode=100822DIV&adults=1&rooms=1&loc=ChIJWbG6xytZwokRMY7uxcRsFVY&sessionId=1635866456"
+                  rel="noopener"
+                  aria-label="Ravel Hotel"
+                >
+                  Ravel Hotel*
+                </a>
+                <br></br>
+                <div className="code">
+                  <b>Code: </b>
+                  100822DIV
+                </div>
+                <br></br>
+                <a
+                  href="https://thehoxton.com/?channel=ppc&gclid=Cj0KCQiAw9qOBhC-ARIsAG-rdn4tS9oZMazgLXiPDMLJ1kSG47kxE0e2WYJWdmUP63arrO9qSL92cV4aAvOmEALw_wcB&gclsrc=aw.ds"
+                  rel="noopener"
+                  aria-label="The Hoxton"
+                >
+                  The Hoxton
+                </a>
+                <div className="code">
+                  <b>Code: </b>
+                  HITCHED1022
+                </div>
+                <br></br>
+                <i id="reception">
+                  *Our wedding reception will be held at the Ravel Hotel
+                </i>
+              </p>
+            </div>
           </LeftContent>
         </Paper>
       </FadeInSection>
@@ -123,27 +143,32 @@ const MainContent = ({ open }) => (
           <SubHeader title="Registry" />
           <Paper elevation={3} className="card">
             <RightContent pics={images[3]}>
-              <p>
-                While celebrating together on our big day means the most, if you
-                want to help us celebrate with a gift, we've provided some
-                inspiration below.
-                <br></br>
-                <a
-                  href="https://www.zola.com/registry/marryvino"
-                  rel="noopener"
-                  aria-label="Zola"
-                >
-                  Zola
-                </a>
-                <br></br>
-                <a
-                  href="https://www.zola.com/registry/marryvino"
-                  rel="noopener"
-                  aria-label="Zola"
-                >
-                  Food 52
-                </a>
-              </p>
+              <div className="reg">
+                <p>
+                  <div className="intro">
+                    While celebrating together on our big day means the most, if
+                    you want to help us celebrate with a gift, we've provided
+                    some inspiration below.
+                    <hr></hr>
+                  </div>
+                  <br></br>
+                  <a
+                    href="https://www.zola.com/registry/marryvino"
+                    rel="noopener"
+                    aria-label="Zola"
+                  >
+                    Zola
+                  </a>
+                  <br></br>
+                  <a
+                    href="https://www.zola.com/registry/marryvino"
+                    rel="noopener"
+                    aria-label="Zola"
+                  >
+                    Food 52
+                  </a>
+                </p>
+              </div>
             </RightContent>
           </Paper>
         </div>
