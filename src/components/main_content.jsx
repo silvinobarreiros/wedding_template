@@ -108,8 +108,10 @@ const MainContent = ({ open }) => (
               <br></br>
               100822DIV<br></br>
               <i>Our wedding reception will be held at the Ravel Hotel</i>
-              <br></br><br></br>
-              <b>The Hoxton</b><br></br>
+              <br></br>
+              <br></br>
+              <b>The Hoxton</b>
+              <br></br>
               HITCHED1022
             </p>
           </LeftContent>
@@ -122,23 +124,25 @@ const MainContent = ({ open }) => (
           <Paper elevation={3} className="card">
             <RightContent pics={images[3]}>
               <p>
-                While celebrating together on our big day means the most, if you want to help us celebrate with a gift, we've provided some inspiration below. 
-                <br></br><br></br>
-                  <a
-                    href="https://www.zola.com/registry/marryvino"
-                    rel="noopener"
-                    aria-label="Zola"
-                  >
-                    Zola
-                  </a>
-                  <br></br>
-                  <a
-                    href="https://www.zola.com/registry/marryvino"
-                    rel="noopener"
-                    aria-label="Zola"
-                  >
-                    Food 52
-                  </a>
+                While celebrating together on our big day means the most, if you
+                want to help us celebrate with a gift, we've provided some
+                inspiration below.
+                <br></br>
+                <a
+                  href="https://www.zola.com/registry/marryvino"
+                  rel="noopener"
+                  aria-label="Zola"
+                >
+                  Zola
+                </a>
+                <br></br>
+                <a
+                  href="https://www.zola.com/registry/marryvino"
+                  rel="noopener"
+                  aria-label="Zola"
+                >
+                  Food 52
+                </a>
               </p>
             </RightContent>
           </Paper>
