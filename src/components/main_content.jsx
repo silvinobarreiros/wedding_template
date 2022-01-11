@@ -50,13 +50,13 @@ const MainContent = ({ open }) => (
           </Paper>
         </div>
       </FadeInSection>
-      <div id={'itinerary-div'} />
+      <div id={'weddingday-div'} />
       <FadeInSection>
         <div>
-          <SubHeader title="Itinerary" />
+          <SubHeader title="Wedding Day" />
           <Paper elevation={3} className="card">
             <RightContent pics={images[1]}>
-              <div className="itin">
+              <div className="wedding">
                 <p>
                   <h2>
                     Ceremony
