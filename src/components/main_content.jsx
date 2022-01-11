@@ -98,9 +98,10 @@ const MainContent = ({ open }) => (
             <div className="accom">
               <p>
                 <div className="intro">
-                  NYC has a variety of options that suits everyone's needs.
-                  We set up room blocks at two convenient locations near the
-                  reception, however please feel free to stay wherever you'd like. 
+                  NYC has a variety of options that suits everyone's needs. We
+                  set up room blocks at two convenient locations near the
+                  reception, however please feel free to stay wherever you'd
+                  like.
                   <hr></hr>
                 </div>
                 <br></br>

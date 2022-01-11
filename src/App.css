@@ -223,7 +223,8 @@ a {
   font-size: 1.2rem;
 }
 
-.intro hr {
+.intro,
+hr {
   width: 6%;
   height: 1px;
   position: relative;
