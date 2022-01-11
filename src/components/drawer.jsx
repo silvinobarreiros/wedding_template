@@ -19,7 +19,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-start'
 }))
 
-const drawerItems = ['Our Story', 'Itinerary', 'Location', 'Travel']
+const drawerItems = ['Our Story', 'Wedding Day', 'Accomodations', 'Registry']
 
 const DrawerMenu = ({ open, drawerWidth, handleDrawerClose }) => {
   const theme = useTheme()
@@ -52,11 +52,7 @@ const DrawerMenu = ({ open, drawerWidth, handleDrawerClose }) => {
           {drawerItems.map((text, index) => (
             <a
               key={index}
-              href={
-                text === 'Our Story'
-                  ? '#ourstory-div'
-                  : `#${text.toLocaleLowerCase()}-div`
-              }
+              href={`#${text.replace(/\s/g, '').toLocaleLowerCase()}-div`}
             >
               <ListItem button key={text} component="button">
                 <ListItemText primary={text} />

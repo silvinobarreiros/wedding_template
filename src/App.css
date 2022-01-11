@@ -22,6 +22,7 @@ body,
   background-color: #fff5ee;
   border-radius: 50%;
 }
+
 .jumbotron {
   position: relative;
   width: 100%;
@@ -72,13 +73,13 @@ body,
 
 #password_dialog_field_content .MuiInputLabel-root {
   color: rgb(255, 255, 255);
-  font-family: 'Dancing Script', cursive !important;
-  font-size: 1em;
+  font-family: 'PlayfairDisplay' !important;
+  font-size: 1.1em;
 }
 
 #password_dialog_btn {
   color: rgb(255, 255, 255);
-  font-family: 'Dancing Script', cursive !important;
+  font-family: 'PlayfairDisplay' !important;
   font-size: 1em;
 }
 
@@ -87,7 +88,7 @@ input#password_dialog_field {
 }
 
 #password_dialog .MuiDialogTitle-root {
-  font-family: 'Dancing Script', cursive !important;
+  font-family: 'PlayfairDisplay' !important;
   font-size: 1.5em;
 }
 
@@ -174,28 +175,28 @@ a {
   margin-right: auto !important;
 }
 
-.itin,
+.wedding,
 .accom,
 .reg {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'PlayfairDisplay' !important;
   margin: auto;
   padding: 0px;
   text-align: center;
   font-size: 1.1rem;
 }
 
-.itin a {
+.wedding a {
   text-decoration: underline;
   color: #000;
 }
 
-.itin h2 {
-  font-size: 2rem;
+.wedding h2 {
+  font-size: 1.6rem;
   margin-top: 8px;
   margin-bottom: 3px;
 }
 
-.itin h2 hr {
+.wedding h2 hr {
   width: 6%;
   height: 1px;
   position: relative;
