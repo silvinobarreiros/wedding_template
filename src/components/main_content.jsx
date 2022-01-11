@@ -50,7 +50,7 @@ const MainContent = ({ open }) => (
           </Paper>
         </div>
       </FadeInSection>
-      <div id={'wedding-day-div'} />
+      <div id={'weddingday-div'} />
       <FadeInSection>
         <div>
           <SubHeader title="Wedding Day" />
