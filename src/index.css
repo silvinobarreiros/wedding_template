@@ -11,9 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-@font-face {
-  font-family: 'PlayfairDisplay';
-  src: local('PlayfairDisplay'), format('truetype');
-  font-weight: regular;
-}
