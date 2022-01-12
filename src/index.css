@@ -11,10 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-@font-face {
-  font-family: 'PlayfairDisplay';
-  src: local('PlayfairDisplay'),
-    url('./fonts/PlayfairDisplay-Regular.ttf') format('truetype');
-  font-weight: regular;
-}
