@@ -156,9 +156,9 @@ const MainContent = ({ open }) => (
                   <a
                     href="https://www.zola.com/registry/marryvino"
                     rel="noopener"
-                    aria-label="Zola"
+                    aria-label="Bloomingdale's"
                   >
-                    Zola
+                    Bloomingdale's
                   </a>
                   <br></br>
                   <a
@@ -166,7 +166,23 @@ const MainContent = ({ open }) => (
                     rel="noopener"
                     aria-label="Zola"
                   >
+                    Zola
+                  </a>
+                  <br></br>
+                  <a
+                    href="https://food52.com/shop/registry/12981-silvino-and-maryalexa"
+                    rel="noopener"
+                    aria-label="Food 52"
+                  >
                     Food 52
+                  </a>
+                  <br></br>
+                  <a
+                    href="https://ilargentoregistry.com/apps/giftregistry/registry/193514"
+                    rel="noopener"
+                    aria-label="il'argento"
+                  >
+                    il'argento
                   </a>
                 </p>
               </div>
