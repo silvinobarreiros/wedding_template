@@ -67,9 +67,9 @@ const MainContent = ({ open }) => (
                   <a
                     href="https://www.google.com/maps/place/Holy+Trinity+Greek+Orthodox+Cathedral/@40.7697635,-73.9562265,15z/data=!4m2!3m1!1s0x0:0x98ddc98e5d9273f1?sa=X&ved=2ahUKEwjq69WZnpb1AhVBj4kEHaQHC8MQ_BJ6BAg7EAU"
                     rel="noopener"
-                    aria-label="Holy Trinty Greek Orthodox Cathedral"
+                    aria-label="Holy Trinity Greek Orthodox Cathedral"
                   >
-                    Holy Trinty Greek Orthodox Cathedral
+                    Holy Trinity Greek Orthodox Cathedral
                   </a>
                   <br></br>
                   <h2>
@@ -84,6 +84,10 @@ const MainContent = ({ open }) => (
                   >
                     Ravel Hotel
                   </a>
+                <br></br>
+                <i>
+                  Current NYC mandates require proof of Covid-19 vaccination for all guests 13 years and older. 
+                </i>
                 </p>
               </div>
             </RightContent>
