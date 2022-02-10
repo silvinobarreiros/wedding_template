@@ -84,10 +84,12 @@ const MainContent = ({ open }) => (
                   >
                     Ravel Hotel
                   </a>
-                <br></br>
-                <i>
-                  Current NYC mandates require proof of Covid-19 vaccination for all guests 13 years and older. 
-                </i>
+                  <br></br>
+                  <br></br>
+                  <i id="ceremony">
+                    *Current NYC mandates require proof of Covid-19 vaccination
+                    for all guests 13 years and older.
+                  </i>
                 </p>
               </div>
             </RightContent>
