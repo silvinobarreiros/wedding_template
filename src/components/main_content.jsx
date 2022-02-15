@@ -45,7 +45,19 @@ const MainContent = ({ open }) => (
           <SubHeader title="Our Story" />
           <Paper elevation={3} className="card">
             <LeftContent pics={images[0]}>
-              <p>Sometimes a job.. is just a job. Sometimes though, when you least expect it, a job becomes more than that. That's where our story begins, at a place of employment, working on the same team, building something <a href="https://www.stash.com/stock-back">fun</a>. What started as work meetings turned into work happy hours turned into work dinners and eventually just into dinners. Funny how things can change course over such a short amount of time, how building some software together can turn into building a life together.</p>
+              <div className="story">
+                <p>
+                  Sometimes a job.. is just a job. Sometimes though, when you
+                  least expect it, a job becomes more than that. That's where
+                  our story begins, at a place of employment, working on the
+                  same team, building something{' '}
+                  <a href="https://www.stash.com/stock-back">fun</a>. What
+                  started as work meetings turned into work happy hours turned
+                  into work dinners and eventually just into dinners. Funny how
+                  drastically things can change over such a short amount of
+                  time.. from building software to building a life together.
+                </p>
+              </div>
             </LeftContent>
           </Paper>
         </div>
