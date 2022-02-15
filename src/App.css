@@ -177,7 +177,8 @@ a {
 
 .wedding,
 .accom,
-.reg {
+.reg,
+.story {
   font-family: 'Playfair Display', serif !important;
   margin: auto;
   padding: 0px;
@@ -237,6 +238,11 @@ a {
 
 .reg a {
   font-size: 1.6rem;
+  text-decoration: underline;
+  color: #000;
+}
+
+.story a {
   text-decoration: underline;
   color: #000;
 }
