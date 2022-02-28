@@ -95,13 +95,12 @@ const MainContent = ({ open }) => (
                     rel="noopener"
                     aria-label="Ravel Hotel"
                   >
-                    Ravel Hotel*
+                    Ravel Hotel
                   </a>
                   <br></br>
                   <br></br>
                   <i id="ceremony">
-                    *Current NYC mandates require proof of Covid-19 vaccination
-                    for all guests 13 years and older.
+                    
                   </i>
                 </p>
               </div>
