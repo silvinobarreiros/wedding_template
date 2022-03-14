@@ -98,10 +98,6 @@ const MainContent = ({ open }) => (
                     Ravel Hotel
                   </a>
                   <br></br>
-                  <br></br>
-                  <i id="ceremony">
-                    
-                  </i>
                 </p>
               </div>
             </RightContent>
