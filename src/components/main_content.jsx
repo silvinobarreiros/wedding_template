@@ -168,7 +168,7 @@ const MainContent = ({ open }) => (
                   </div>
                   <br></br>
                   <a
-                    href="https://www.zola.com/registry/marryvino"
+                    href="https://www.bloomingdales.com/registry/wedding/guest/MARYALEXA-DIVVER-SILVINO-BARREIROS/?registryId=7313959"
                     rel="noopener"
                     aria-label="Bloomingdale's"
                   >
