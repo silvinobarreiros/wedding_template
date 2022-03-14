@@ -95,14 +95,9 @@ const MainContent = ({ open }) => (
                     rel="noopener"
                     aria-label="Ravel Hotel"
                   >
-                    Ravel Hotel*
+                    Ravel Hotel
                   </a>
                   <br></br>
-                  <br></br>
-                  <i id="ceremony">
-                    *Current NYC mandates require proof of Covid-19 vaccination
-                    for all guests 13 years and older.
-                  </i>
                 </p>
               </div>
             </RightContent>
@@ -173,7 +168,7 @@ const MainContent = ({ open }) => (
                   </div>
                   <br></br>
                   <a
-                    href="https://www.zola.com/registry/marryvino"
+                    href="https://www.bloomingdales.com/registry/wedding/guest/MARYALEXA-DIVVER-SILVINO-BARREIROS/?registryId=7313959"
                     rel="noopener"
                     aria-label="Bloomingdale's"
                   >
