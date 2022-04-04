@@ -190,14 +190,6 @@ const MainContent = ({ open }) => (
                   >
                     Food 52
                   </a>
-                  <br></br>
-                  <a
-                    href="https://ilargentoregistry.com/apps/giftregistry/registry/193514"
-                    rel="noopener"
-                    aria-label="il'argento"
-                  >
-                    il'argento
-                  </a>
                 </p>
               </div>
             </RightContent>
