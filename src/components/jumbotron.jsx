@@ -11,6 +11,7 @@ const Jumbotron = ({ pics }) => {
     <div className="jumbotron">
       <img src={pic.url} alt={pic.description} />
       <h1> MaryAlexa & Silvino </h1>
+      <br></br>
       <h2> 10.08.2022 </h2>
     </div>
   )
