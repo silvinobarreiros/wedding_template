@@ -10,7 +10,6 @@ import RightContent from './left_image_rigth_content'
 import FadeInSection from './fadein'
 import { splitarray } from '../util'
 import { coverPhotos, allExceptCover } from '../images'
-import PasswordDialog from './password_dialog'
 
 const images = splitarray(allExceptCover, allExceptCover.length / 4)
 console.log(images)
@@ -37,7 +36,6 @@ const Main = styled('main', { shouldForwardProp: prop => prop !== 'open' })(
 const MainContent = ({ open }) => (
   <>
     <Main open={open} id="Main">
-      <PasswordDialog />
       <Jumbotron pics={coverPhotos} />
       <div id={'ourstory-div'} />
       <FadeInSection>
@@ -74,8 +72,6 @@ const MainContent = ({ open }) => (
                     Ceremony
                     <hr></hr>
                   </h2>
-                  14:00
-                  <br></br>
                   <a
                     href="https://www.google.com/maps/place/Holy+Trinity+Greek+Orthodox+Cathedral/@40.7697635,-73.9562265,15z/data=!4m2!3m1!1s0x0:0x98ddc98e5d9273f1?sa=X&ved=2ahUKEwjq69WZnpb1AhVBj4kEHaQHC8MQ_BJ6BAg7EAU"
                     rel="noopener"
@@ -88,8 +84,6 @@ const MainContent = ({ open }) => (
                   <h2>
                     Reception<hr></hr>
                   </h2>
-                  18:00
-                  <br></br>
                   <a
                     href="https://www.google.com/maps/place/Ravel+Hotel,+Trademark+Collection+by+Wyndham/@40.7538562,-73.9516326,17z/data=!3m1!4b1!4m8!3m7!1s0x89c2598de86a3b3b:0x1918f3a5466f7603!5m2!4m1!1i2!8m2!3d40.7538245!4d-73.9493865"
                     rel="noopener"
