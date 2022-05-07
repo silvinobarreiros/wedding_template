@@ -57,7 +57,7 @@ const Jumbotron = ({ pics }) => {
 }
 
 Jumbotron.propTypes = {
-  pics: PropTypes.object.isRequired
+  pics: PropTypes.array.isRequired
 }
 
 export default Jumbotron

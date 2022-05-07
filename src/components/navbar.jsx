@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Typography from '@mui/material/Typography'
-import IconButton from '@mui/material/IconButton'
-import MenuIcon from '@mui/icons-material/Menu'
+// import IconButton from '@mui/material/IconButton'
+// import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
 import MuiAppBar from '@mui/material/AppBar'
 import { styled } from '@mui/material/styles'
@@ -24,7 +24,14 @@ const AppBar = styled(MuiAppBar, {
   })
 }))
 
-const NavBar = ({ open, drawerWidth, handleDrawerOpen }) => {
+// eslint-disable-next-line no-empty-pattern
+const Logo = styled(Typography)(({}) => ({
+  color: 'black !important',
+  fontFamily: 'Dancing Script, cursive',
+  fontSize: '1.5em'
+}))
+
+const NavBar = ({ open, drawerWidth }) => {
   return (
     <>
       <AppBar
@@ -34,25 +41,9 @@ const NavBar = ({ open, drawerWidth, handleDrawerOpen }) => {
         drawerWidth={drawerWidth}
       >
         <Toolbar>
-          <Typography
-            variant="h6"
-            noWrap
-            sx={{ flexGrow: 1 }}
-            component="div"
-            id="logo"
-          >
+          <Logo variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
             M & S
-          </Typography>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerOpen}
-            sx={{ ...(open && { display: 'none' }) }}
-            id="burgerMenu"
-          >
-            <MenuIcon />
-          </IconButton>
+          </Logo>
         </Toolbar>
       </AppBar>
     </>
