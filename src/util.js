@@ -27,3 +27,5 @@ export const daysBetween = (dateOne, dateTwo) => {
 
   return Math.abs(days)
 }
+
+export const isMobile = ({ width }) => width <= 768

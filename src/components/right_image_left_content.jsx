@@ -1,33 +1,71 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { styled } from '@mui/material/styles'
-import { getRandomEntry } from '../util'
+import { getRandomEntry, isMobile } from '../util'
 import useWindowSize from '../hooks/useWindowSize'
+import {
+  MOBILE_IMAGE_HEIGHT,
+  DESKTOP_MARGIN,
+  DESKTOP_IMAGE_HEIGHT,
+  MOBILE_MARGIN
+} from '../config'
 
-const RootStyle = styled('div')(() => ({
-  display: 'flex',
-  flexDirection: 'row',
-  marginLeft: '8rem',
-  marginRight: '8rem'
-}))
+const RootStyle = styled('div')(({ size }) => {
+  const base = {
+    display: 'flex',
+    flexDirection: 'row'
+  }
+
+  if (isMobile(size)) {
+    return {
+      ...base,
+      flexWrap: 'wrap',
+      marginLeft: `${MOBILE_MARGIN}rem`,
+      marginRight: `${MOBILE_MARGIN}rem`
+    }
+  }
+
+  return {
+    ...base,
+    marginLeft: `${DESKTOP_MARGIN}rem`,
+    marginRight: `${DESKTOP_MARGIN}rem`
+  }
+})
 
 const Photo = styled('div')(({ size }) => {
-  const { width } = size
+  const base = { opacity: '0.6', boxShadow: '60px -16px #fff5ee' }
 
-  const imgWidth = width >= 1000 ? '400px' : '200px'
+  if (isMobile(size)) {
+    return {
+      img: {
+        ...base,
+        marginRight: `${MOBILE_MARGIN}rem`,
+        height: MOBILE_IMAGE_HEIGHT
+      }
+    }
+  }
 
   return {
     img: {
-      height: imgWidth,
-      opacity: '0.6',
-      boxShadow: '60px -16px #fff5ee'
+      ...base,
+      height: DESKTOP_IMAGE_HEIGHT
     }
   }
 })
 
-const Content = styled('div')(() => ({
-  marginRight: '4rem'
-}))
+const Content = styled('div')(({ size }) => {
+  if (isMobile(size)) {
+    return {
+      marginRight: `${MOBILE_MARGIN}rem`,
+      marginLeft: `${MOBILE_MARGIN}rem`,
+      marginBottom: `${MOBILE_MARGIN / 2}rem`
+    }
+  }
+
+  return {
+    marginRight: `${DESKTOP_MARGIN / 2}rem`
+  }
+})
 
 const LeftContent = ({ pics, children }) => {
   const size = useWindowSize()
@@ -35,8 +73,8 @@ const LeftContent = ({ pics, children }) => {
   const [pic] = useState(randomPic)
 
   return (
-    <RootStyle>
-      <Content>{children}</Content>
+    <RootStyle size={size}>
+      <Content size={size}>{children}</Content>
       <Photo size={size}>
         <img src={pic.url} alt={pic.description} />
       </Photo>

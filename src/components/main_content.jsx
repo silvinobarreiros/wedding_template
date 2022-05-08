@@ -10,7 +10,6 @@ import RightContent from './left_image_rigth_content'
 import FadeInSection from './fadein'
 import { splitarray } from '../util'
 import { coverPhotos, allExceptCover } from '../images'
-import useWindowSize from '../hooks/useWindowSize'
 
 const images = splitarray(allExceptCover, allExceptCover.length / 4)
 console.log(images)
@@ -43,16 +42,11 @@ const Card = styled(Paper)(() => ({
 }))
 
 const MainContent = ({ open }) => {
-  const size = useWindowSize()
-
   return (
     <>
       <Main open={open} id="Main">
         <Jumbotron pics={coverPhotos} />
         <div id={'ourstory-div'} />
-        <div>
-          {size.width}px / {size.height}px
-        </div>
         <FadeInSection>
           <div>
             <SubHeader title="Our Story" />
