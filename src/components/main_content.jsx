@@ -11,7 +11,7 @@ import FadeInSection from './fadein'
 import { splitarray } from '../util'
 import { coverPhotos, allExceptCover } from '../images'
 
-const images = splitarray(allExceptCover, allExceptCover.length / 4)
+const images = splitarray(allExceptCover, allExceptCover.length / 5)
 console.log(images)
 
 const Main = styled('main', { shouldForwardProp: prop => prop !== 'open' })(
@@ -73,7 +73,10 @@ const MainContent = ({ open }) => {
         <div id={'weddingday-div'} />
         <FadeInSection>
           <div>
-            <SubHeader title="Wedding Day" />
+            <SubHeader
+              title="Wedding Day"
+              subTitle="Saturday, October 8th, 2022"
+            />
             <Card elevation={3}>
               <RightContent pics={images[1]}>
                 <div className="wedding">
@@ -82,6 +85,8 @@ const MainContent = ({ open }) => {
                       Ceremony
                       <hr></hr>
                     </h2>
+                    <div>3:30 p.m.</div>
+
                     <a
                       href="https://www.google.com/maps/place/Holy+Trinity+Greek+Orthodox+Cathedral/@40.7697635,-73.9562265,15z/data=!4m2!3m1!1s0x0:0x98ddc98e5d9273f1?sa=X&ved=2ahUKEwjq69WZnpb1AhVBj4kEHaQHC8MQ_BJ6BAg7EAU"
                       rel="noopener"
@@ -91,9 +96,11 @@ const MainContent = ({ open }) => {
                     </a>
                     <br></br>
                     <br></br>
+                    <br></br>
                     <h2>
                       Reception<hr></hr>
                     </h2>
+                    <div>6:30 p.m.</div>
                     <a
                       href="https://www.google.com/maps/place/Ravel+Hotel,+Trademark+Collection+by+Wyndham/@40.7538562,-73.9516326,17z/data=!3m1!4b1!4m8!3m7!1s0x89c2598de86a3b3b:0x1918f3a5466f7603!5m2!4m1!1i2!8m2!3d40.7538245!4d-73.9493865"
                       rel="noopener"
@@ -108,11 +115,49 @@ const MainContent = ({ open }) => {
             </Card>
           </div>
         </FadeInSection>
+        <div id={'dayafter-div'} />
+        <FadeInSection>
+          <div>
+            <SubHeader
+              title='Farewell "Brunch"'
+              subTitle="Sunday, October 9th, 2022"
+            />
+            <Card elevation={3}>
+              <LeftContent pics={images[2]}>
+                <div className="wedding">
+                  <p>
+                    <div className="intro">
+                      We all know fall weddings can be controversial. Smack dab,
+                      in the middle of the best season of the year, football
+                      season. We too, participate in this glorious time of the
+                      year, and so we thought of no better way to end our
+                      wedding than to say farewell to our favorite people at our
+                      favorite football Sunday bar.
+                      <hr></hr>
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <div>11:30 a.m.</div>
+
+                    <a
+                      href="https://g.page/KentAleHouse?share"
+                      rel="noopener"
+                      aria-label="Kent Ale House"
+                    >
+                      Kent Ale House
+                    </a>
+                    <br></br>
+                  </p>
+                </div>
+              </LeftContent>
+            </Card>
+          </div>
+        </FadeInSection>
         <div id={'accomodations-div'} />
         <FadeInSection>
           <SubHeader title="Accomodations" />
           <Card elevation={3}>
-            <LeftContent pics={images[2]}>
+            <RightContent pics={images[3]}>
               <div className="accom">
                 <p>
                   <div className="intro">
@@ -153,7 +198,7 @@ const MainContent = ({ open }) => {
                   </i>
                 </p>
               </div>
-            </LeftContent>
+            </RightContent>
           </Card>
         </FadeInSection>
         <div id={'registry-div'} />
@@ -161,7 +206,7 @@ const MainContent = ({ open }) => {
           <div>
             <SubHeader title="Registry" />
             <Card elevation={3}>
-              <RightContent pics={images[3]}>
+              <LeftContent pics={images[4]}>
                 <div className="reg">
                   <p>
                     <div className="intro">
@@ -196,7 +241,7 @@ const MainContent = ({ open }) => {
                     </a>
                   </p>
                 </div>
-              </RightContent>
+              </LeftContent>
             </Card>
           </div>
         </FadeInSection>
