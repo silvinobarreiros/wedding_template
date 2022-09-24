@@ -19,7 +19,7 @@ const RootStyle = styled('div')(({ size }) => {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       fontSize: isMobile(size) ? '4rem' : '6rem',
-      fontFamily: 'Dancing Script, cursive'
+      fontFamily: 'ArtisanSignature'
     },
     h2: {
       position: 'relative',
@@ -30,7 +30,7 @@ const RootStyle = styled('div')(({ size }) => {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       fontSize: '2rem',
-      fontFamily: 'Dancing Script, cursive'
+      fontFamily: 'ArtisanSignature'
     },
     img: {
       objectFit: 'cover',

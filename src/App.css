@@ -53,7 +53,7 @@ a {
 .accom,
 .reg,
 .story {
-  font-family: 'Playfair Display', serif !important;
+  font-family: 'Montserrat', sans-serif!important;
   margin: auto;
   padding: 0px;
   text-align: center;
@@ -61,6 +61,8 @@ a {
 }
 
 .wedding a {
+  margin-left: 10px;
+  margin-right: 10px;
   text-decoration: underline;
   color: #000;
 }
@@ -69,9 +71,28 @@ a {
   font-size: 1.6rem;
   margin-top: 8px;
   margin-bottom: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .wedding h2 hr {
+  width: 6%;
+  height: 1px;
+  position: relative;
+  bottom: 7px;
+  border: none;
+  margin-bottom: 0px;
+  background-color: #dad1cb;
+}
+
+.wedding h3 {
+  font-size: 1.3rem;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.wedding h3 hr {
   width: 6%;
   height: 1px;
   position: relative;

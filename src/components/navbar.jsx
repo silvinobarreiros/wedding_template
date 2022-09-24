@@ -27,7 +27,7 @@ const AppBar = styled(MuiAppBar, {
 // eslint-disable-next-line no-empty-pattern
 const Logo = styled(Typography)(({}) => ({
   color: 'black !important',
-  fontFamily: 'Dancing Script, cursive',
+  fontFamily: 'ArtisanSignature',
   fontSize: '1.5em'
 }))
 
