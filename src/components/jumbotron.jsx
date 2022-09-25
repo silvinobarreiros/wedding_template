@@ -4,6 +4,8 @@ import { styled } from '@mui/material/styles'
 import useWindowSize from '../hooks/useWindowSize'
 import { getRandomEntry, isMobile } from '../util'
 
+const MIN_FOLD_WIDTH = 1090
+
 // eslint-disable-next-line no-empty-pattern
 const RootStyle = styled('div')(({ size }) => {
   return {
@@ -18,18 +20,7 @@ const RootStyle = styled('div')(({ size }) => {
       top: '-70%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      fontSize: isMobile(size) ? '4rem' : '6rem',
-      fontFamily: 'ArtisanSignature'
-    },
-    h2: {
-      position: 'relative',
-      textAlign: 'center',
-      justifyContent: 'center',
-      zIndex: 2,
-      top: '-70%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      fontSize: '2rem',
+      fontSize: isMobile(size) ? '3.5rem' : '6rem',
       fontFamily: 'ArtisanSignature'
     },
     img: {
@@ -45,6 +36,8 @@ const RootStyle = styled('div')(({ size }) => {
   }
 })
 
+const shouldFoldFont = ({ width }) => width < MIN_FOLD_WIDTH
+
 const Jumbotron = ({ pics }) => {
   const size = useWindowSize()
   const randomPic = getRandomEntry(pics)
@@ -53,8 +46,15 @@ const Jumbotron = ({ pics }) => {
   return (
     <RootStyle size={size}>
       <img src={pic.url} alt={pic.description} />
-      <h1> MaryAlexa & Silvino </h1>
-      <h2> 10.08.2022 </h2>
+
+      {shouldFoldFont(size) ? (
+        <h1>
+          {' '}
+          MaryAlexa <br></br>&<br></br> Silvino{' '}
+        </h1>
+      ) : (
+        <h1> MaryAlexa & Silvino </h1>
+      )}
     </RootStyle>
   )
 }
