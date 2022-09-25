@@ -185,14 +185,14 @@ export const photos = {
   }
 }
 
-export const coverPhotos = [photos.brick, photos.beachFive]
+export const coverPhotos = [photos.brick, photos.pic0162, photos.beachOne]
 
 export const beachPhotos = [
-  photos.beachOne,
   photos.beachTwo,
   photos.beachThreeLarge,
   photos.beachThree,
-  photos.beachFour
+  photos.beachFour,
+  photos.beachFive
 ]
 
 export const otherPhotos = [
@@ -224,7 +224,6 @@ export const otherPhotos = [
   photos.pic0090,
   photos.pic0141,
   photos.pic0144,
-  photos.pic0162,
   photos.pic0186,
   photos.pic0188,
   photos.pic0189,
