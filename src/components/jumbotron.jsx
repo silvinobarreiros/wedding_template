@@ -20,7 +20,9 @@ const RootStyle = styled('div')(({ size }) => {
       top: '-70%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      fontSize: isMobile(size) ? '3.5rem' : '6rem',
+      fontSize: isMobile(size) ? '2.8rem' : '6rem',
+      marginLeft: '5px',
+      marginRight: '5px',
       fontFamily: 'ArtisanSignature'
     },
     img: {
