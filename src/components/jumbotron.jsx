@@ -23,17 +23,6 @@ const RootStyle = styled('div')(({ size }) => {
       fontSize: isMobile(size) ? '3.5rem' : '6rem',
       fontFamily: 'ArtisanSignature'
     },
-    h2: {
-      position: 'relative',
-      textAlign: 'center',
-      justifyContent: 'center',
-      zIndex: 2,
-      top: '-70%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      fontSize: '2rem',
-      fontFamily: 'ArtisanSignature'
-    },
     img: {
       objectFit: 'cover',
       width: '100%',
